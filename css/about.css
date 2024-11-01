@@ -1,0 +1,159 @@
+.storyQuoteText {
+    background-color: #eeeeee;
+    background-image: url('../img/paperBackground.png');
+    border-radius: 12px;
+    color: white;
+    font-family: seurat-pro;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    width: 700px;
+    z-index: 1; /* Place above stroked text */
+}
+.storyQuoteStroke {
+    -webkit-text-stroke-width: 8px;
+    bottom: 100px;
+    color: black;
+    font-family: seurat-pro;
+    font-size: 16px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 700px;
+    z-index: -1; /* Place above stroked text */
+}
+
+.levelSampleButton:hover {
+    animation: levelSampleHoverLoop 1s linear alternate infinite;
+}
+
+@keyframes levelSampleHoverLoop {
+	0% {
+	    scale: 100%;
+	}
+	100% {
+	    scale: 102%;
+	}
+}
+
+.levelPreviewSelection {
+    -webkit-box-shadow: inset 0 2px 30px #000;
+    background-color: black;
+    background-image: linear-gradient(#74148cbb, #30093abb);
+    box-shadow: inset 0 2px 30px #000;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+}
+
+.levelPreviewInstructions {
+    color: white;
+    font-family: ebrima;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.levelPreviewButton {
+    /*background-color: white;
+    border: 5px outset whitesmoke;*/
+    background-image: url('../img/button/fourFrameButton-450x64.png');
+    cursor: pointer;
+    margin: auto;
+    width: 450px;
+    height: 64px;
+}
+
+/* Position arrow on the level preview buttons */
+.lvlPreBtnArrow {
+    height: 37px;
+    left: 15px;
+    position: relative;
+    top: 10px;
+    width: 48px;
+}
+
+/* Animate the arrow when hovering the entire button */
+.levelPreviewButton:hover {
+    animation: buttonHover 0.1s linear forwards;
+    background-image: url('../img/button/Active/fourFrameButtonActive-450x64.png');
+}
+
+@keyframes levelPreviewArrowAnim {
+	0% {
+	    left: 15px;
+	}
+	100% {
+	    left: 20px;
+	}
+}
+
+.levelTitleText {
+    color: white;
+    font-family: mario-font;
+    font-size: 32px;
+    position: relative;
+    z-index: 1; /* Place above stroked text */
+}
+
+.levelTitleStroke {
+    -webkit-text-stroke-width: 8px;
+    bottom: 42px;
+    color: black;
+    font-family: mario-font;
+    font-size: 32px;
+    position: relative;
+}
+
+.levelPreviewContainer {
+    background-color: #666;
+    width: 460px; /* Button's width + border thickness * 2 */
+    height: 128px;
+}
+
+
+
+/* Modal-related stuff (the majority is in lightbox.css) */
+.modalStageTitleContainer {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+/* "World" and level name text*/
+.modalStageTitle {
+    font-size: 32px;
+    font-family: mario-font;
+    color: white;
+}
+/* For the "world-level" text */
+.modalStageID {
+    color: #8aee00;
+    font-size: 40px;
+    position: relative;
+    bottom: 12px;
+}
+
+/* Text stroke effects */
+.modalStageStroke {
+    color: black;
+    position: relative;
+    bottom: 68px;
+    z-index: -1;
+    -webkit-text-stroke-width: 8px;
+}
+.modalStageStrokeID {
+    color: black;
+    font-size: 40px;
+    position: relative;
+    bottom: 97px;
+    z-index: -1;
+    -webkit-text-stroke-width: 8px;
+}
+
+.modalStageDescription {
+    font-family: seurat-pro;
+    color: white;
+    font-size: 18px;
+}

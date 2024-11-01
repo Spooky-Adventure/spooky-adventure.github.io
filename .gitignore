@@ -1,0 +1,5 @@
+# Random testing and other stuff that isn't a part of the public website
+localonly/
+
+# Shortcut to folder with PSDs
+img/!PSDs.lnk

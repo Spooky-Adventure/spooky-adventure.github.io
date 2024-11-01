@@ -1,0 +1,49 @@
+/* Home-page CSS, see global for headers/footers, background, and font definitions [index.html] */
+
+
+
+/* Mod logo, size defined in HTML tag since it breaks the center-alignment if it's put here for some reason */
+.projectLogo {
+    -webkit-filter: drop-shadow(12px 18px 5px #00000066);
+    filter: drop-shadow(12px 18px 5px #00000066); 
+    text-align: center;
+}
+
+.modLength {
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+
+.gameScreenshots {
+    -webkit-filter: drop-shadow(0px -8px 5px #00000066);
+    background-blend-mode: multiply;
+    background-image: url('../img/buttonStripes.png'), linear-gradient(#74148c, #30093a);
+    background-repeat: repeat, no-repeat;
+    background-size: 40px, auto;
+    border-top: solid thick #000000;
+    border-bottom: solid thick #000000;
+    box-shadow: 0px 10px 5px #00000066;
+    filter: drop-shadow(0px -8px 5px #00000066); 
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+h2.screenshotHeader {
+    color: #ffffff;
+    font-family: mario-font;
+    font-size: 40px;
+    font-size-adjust: 60px;
+    text-align: center;
+    text-shadow: 5px 5px #00000055;
+    height: 10px;
+    line-height: 30px;
+}
+
+.screenshotText {
+    font-family: ebrima;
+    font-size: 18px;
+    text-align: center;
+}

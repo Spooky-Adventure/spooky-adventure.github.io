@@ -1,0 +1,60 @@
+<!-- 404 "Page Not Found" error page -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>404 Error! - Spooky Adventure</title>
+		<link rel="icon" type="image/png" href="./favicon.ico">
+        <link rel="stylesheet" href="./css/global.css"> <!-- Globals -->
+		<link rel="stylesheet" href="./css/pageNotFound.css">
+        <script>
+            function getCurrentURL() {
+                document.getElementById("unlocatableURL").innerHTML = window.location.href;
+            }
+        </script>
+	</head>
+	<body onload="getCurrentURL()">
+        <div class="bgCheckers">
+            <div class="header">
+                <div style="padding: 5px;"></div>
+                Super Mario Spooky Adventure
+                <div style="padding: 5px;"></div>
+                <div>
+                    <a class="purpleButton" href="index.html">Home</a>
+                    <a class="purpleButton" href="about.html">About</a>
+                    <a class="purpleButton" href="links.html">Links</a>
+                    <a class="purpleButton" href="https://discord.gg/fW5D3b6WQ8">Discord</a>
+                </div>
+            </div>
+            <div class="errorMsgContainer">
+                <h2 class="errorTitle">404 - Page not found!</h2>
+                <p class="errorText">
+                    Yikes, it seems the page you're trying to go to doesn't exist. Check to make sure you didn't misspell anything, or that the link is correct.
+                </p>
+                <p class="errorText">
+                    If a button/link on another page brought you to this screen, we would appreciate it if you could
+                    join our Discord server, and let us know what you clicked on that led you to this page.
+                </p>
+                <p class="errorText">
+                    <b>The full URL you attempted to go to:</b><br>
+                </p>
+            </div>
+            <div style="text-align: center;">
+                <code class="unlocatableURL" id="unlocatableURL"></code>
+                <div style="padding: 15px;"></div>
+                <a class="violetButton" style="width: 200px;" href="index.html">Go Home</a>
+                <div style="padding: 2px;"></div>
+                <a class="purpleButton" style="width: 200px;" href="https://discord.gg/fW5D3b6WQ8">Join our Discord</a>
+            </div>
+            <div class="footerCoverupFix"></div>
+            <div class="footer">
+                <div style="padding: 2px;"></div>
+                <b>(c)</b> 2022/2023 - MandyIGuess & the Spooky Adventure Development Team<br>
+                <b>NEW Super Mario Bros. Wii</b>, as well as characters such as Mario, Luigi, Toad, and any others, are <em>fully</em> owned by NINTENDO.<br>
+                I do not have any ownership (full or partial), of said characters.<br>
+                <b>Newer Super Mario Bros. Wii</b> is a project of the Newer Team, which I am not part of, nor do I have any involvement with.<br>
+                <b><i>Spooky Adventure is my project. For concerns regarding it, contact me.</i></b>
+            </div>
+        </div>
+	</body>
+</html>

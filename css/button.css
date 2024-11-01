@@ -1,0 +1,85 @@
+/* CSS styling for the various buttons throughout the website */
+
+/* Main button animation */
+@keyframes buttonHover {
+    0% {
+        scale: 100%;
+	}
+    60% {
+	    scale: 117%;
+	}
+	100% {
+	    scale: 113%;
+	}
+}
+
+
+
+/* Button controlling animations */
+div.animController {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+div.animController:hover {
+    animation: buttonHover 0.1s linear forwards;
+}
+
+
+
+/* Main green buttons, this is shared no matter what size it is */
+a.mainButton:link, a.mainButton:visited {
+    background-repeat: repeat, no-repeat;
+    color: white;
+    display: inline-block;
+    font-family: seurat-pro;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-text-stroke: black 1.5px;
+}
+
+/*** Below is the different button sizes ***/
+
+/* 130x48px buttons */
+a.mainButton:link[data-size="130x48"], a.mainButton:visited[data-size="130x48"] {
+    background-image: url('../img/button/fourFrameGreen-130x48.png');
+    width: 130px;
+    height: 48px;
+}
+a.mainButton:hover[data-size="130x48"], a.mainButton:active[data-size="130x48"] {
+    background-image: url('../img/button/Active/fourFrameButtonActive-130x68.png');
+    animation: buttonHover 0.1s linear forwards;
+}
+
+/* Yellow 160x48px buttons, used for the Download page navbar button */
+a.mainButton:link[data-size="130x48"][data-color="yellow"], a.mainButton:visited[data-size="130x48"][data-color="yellow"] {
+    background-image: url('../img/button/fourFrameYellow-160x48.png');
+    width: 160px;
+    height: 48px;
+}
+a.mainButton:hover[data-size="130x48"][data-color="yellow"], a.mainButton:active[data-size="130x48"][data-color="yellow"] {
+    background-image: url('../img/button/Active/fourFrameButtonActive-160x68.png');
+    animation: buttonHover 0.1s linear forwards;
+}
+
+
+/* If we're already on this page, or the button is permanently active, use this class */
+.mainButtonOnPage {
+    background-image: url('../img/button/Active/fourFrameButtonActive-130x68.png');
+    background-repeat: repeat, no-repeat;
+    color: white;
+    cursor: not-allowed;
+    display: inline-block;
+    filter: grayscale(100%);
+    height: 48px;
+    font-family: seurat-pro;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-text-stroke: black 1.5px;
+    -webkit-filter: grayscale(100%);
+    width: 130px;
+}

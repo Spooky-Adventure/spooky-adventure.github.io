@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About Spooky Adventure</title>
+		<meta content="Super Mario Spooky Adventure - About" property="og:title" />
+		<meta content="Learn more in-depth information about Spooky Adventure." property="og:description" />
+		<meta content="https://spooky-adventure.github.io" property="og:url" />
+		<meta content="#65129C" data-react-helmet="true" name="theme-color" />
+		<link rel="icon" type="image/png" href="./favicon.ico">
+		<link rel="stylesheet" href="./css/button.css">
+        <link rel="stylesheet" href="./css/global.css">
+		<link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="./css/lightbox.css">
+	</head>
+	<body>
+		<div class="bgCheckers">
+			<nav class="header">
+				<div style="padding: 5px;"></div>
+				Super Mario Spooky Adventure
+				<div style="padding: 5px;"></div>
+				<div>
+					<a class="mainButton" data-size="130x48" href="index.html">Home</a>
+					<div class="mainButtonOnPage">
+						<div class="tooltip">About
+							<span class="tooltipText">You're already here!</span>
+						</div>
+					</div>
+					<!-- <a class="mainButton" data-size="130x48" data-color="yellow" href="./download/index.html">Download</a>  -->
+					<a class="mainButton" data-size="130x48" href="links.html">Links</a>
+					<a class="mainButton" data-size="130x48" href="https://discord.gg/fW5D3b6WQ8">Discord</a>
+				</div>
+				<div class="kadomaruFlame"></div>
+			</nav>
+			<div class="headerTopRealignment"></div>
+
+			<div class="textContainer">
+				<h2 class="textHeader">About Spooky Adventure</h2>
+				<p class="generalText">
+					Wanna know more about Spooky Adventure? See below for more information like
+                    the length of the mod, the story, and much more!
+				</p>
+            </div>
+            <div style="padding: 12px;"></div>
+            <div class="separatorLine"></div>
+
+			<div class="modLength">
+				<h2 class="textHeader">How big will the mod be?</h2>
+				<p class="generalText">
+					We're not quite sure yet just how big the mod will be, but one thing we can say for sure is that it won't be absolutely
+                    massive with a bunch of worlds. Keep up with development if you want to know if/when we discuss the size of the mod.
+				</p>
+			</div>
+
+            <div class="gameStory">
+                <h2 class="textHeader">The Story</h2>
+                <div style="padding: 4px;"></div>
+                <p class="storyQuoteText">
+                    "Mario and co. land on a mysterious island shortly after their previous adventure, however it doesn't take long before the
+                    princess is missing once more!<br>Can you save her from Bowser yet again?"
+                </p>
+				<p class="storyQuoteStroke">
+                    "Mario and co. land on a mysterious island shortly after their previous adventure, however it doesn't take long before the
+                    princess is missing once more!<br>Can you save her from Bowser yet again?"
+                </p>
+                <br>
+                <p class="generalText">
+                    Shortly after Mario and company defeat Bowser in their last adventure, they land on an island known for it's paranormal activity! As the group
+                    look around the shoreline, Bowser shows up and snatches Princess Peach, before swiftly flying off into the distance!
+                    Mario and friends give chase, however this island is bigger than they thought... it seems like they'll have quite the <i>spooky</i> adventure
+                    ahead of them!
+                </p>
+            </div>
+            <div style="padding: 12px;"></div>
+
+			<!-- Level Previews -->
+            <div>
+                <h2 class="textHeader">Level Sneak-Peeks!</h2>
+                <p class="generalText">Interested in seeing some levels? Click on the buttons below to see more!</p>
+				<div>
+					<div class="levelPreviewSelection">
+						<h2 class="levelPreviewInstructions">
+							NOTE: Some levels may not reflect the current quality/state of the mod.
+						</h2>
+
+						<div class="levelPreviewButton" onclick="openModal(); currentSlide(1);">
+							<span style="position: relative; top: 5px;">
+								<div class="levelTitleText">Petrified Treeway</div>
+								<div class="levelTitleStroke">Petrified Treeway</div>
+							</span>
+						</div>
+
+						<div class="levelPreviewButton" onclick="openModal(); currentSlide(2);">
+							<span style="position: relative; top: 5px;">
+								<div class="levelTitleText">Bramball Woods</div>
+								<div class="levelTitleStroke">Bramball Woods</div>
+							</span>
+						</div>
+
+						<div class="levelPreviewButton" onclick="openModal(); currentSlide(3);">
+							<span style="position: relative; top: 5px;">
+								<div class="levelTitleText">World 6 - 9</div>
+								<div class="levelTitleStroke">World 6 - 9</div>
+							</span>
+						</div>
+
+					</div>
+				</div>
+            </div>
+
+			
+			<!-- Level Preview lightbox -->
+			<script src="./script/lightbox.js">// Code for the Lightboxes</script>
+			<div id="lightboxModal" class="modal">
+				<span id="btnClose" class="close cursor" onclick="closeModal()">Close &times;</span>
+				<div class="modal-content">
+			
+					<!-- Coastline Shop -->
+					<div class="mySlides">
+						<span class="modalStageTitleContainer">
+							<span>
+								<h2 class="modalStageTitle">World</h2>
+								<div class="modalStageTitle modalStageStroke">World</div>
+							</span>
+							&nbsp;&nbsp;
+							<span>
+								<h2 class="modalStageTitle modalStageID">1-1</h2>
+								<div class="modalStageTitle modalStageStrokeID">1-1</div>
+							</span>
+							<span>
+								<h2 class="modalStageTitle">: Petrified Treeway</h2>
+								<div class="modalStageTitle modalStageStroke">: Petrified Treeway</div>
+							</span>
+						</span>
+						<p class="modalStageDescription">
+							This old stage was one of the first made for the mod! It features some general ghost-related themes and simple
+							platforming, while mainly focusing on manipulating the level with switches.
+						</p>
+						<img src="./img/screenshots/img (1).png" style="width:100%">
+						<p class="modalStageDescription">Interested in seeing this level in action? Check out our showcase of this level!</p>
+						<a href="/localonly/buttonLinesTest.html">Development Showcase Video</a>
+					</div>
+			
+					<div class="mySlides">
+						<div class="numberText">Image 2 of 4</div>
+						<img src="./img/screenshots/img (2).png" style="width:100%">
+					</div>
+			
+					<div class="mySlides">
+						<div class="numberText">Image 3 of 4</div>
+						<img src="./img/screenshots/img (3).png" style="width:100%">
+					</div>
+			
+					<div class="mySlides">
+						<div class="numberText">Image 4 of 4</div>
+						<img src="./img/screenshots/img (4).png" style="width:100%">
+					</div>
+			
+					<!-- Next/previous controls -->
+					<a id="btnPrev" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a id="btnNext" class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+			</div>
+
+
+			<div style="padding: 80px;"></div>
+			<div class="footer">
+				<div class="kadomaruFlame"></div>
+				<div style="padding: 2px;"></div>
+				<b>(c)</b> 2022/2023 - MandyIGuess & the Spooky Adventure Development Team<br>
+				<b>NEW Super Mario Bros. Wii</b>, as well as characters such as Mario, Luigi, Toad, and any others, are <em>fully</em> owned by NINTENDO.<br>
+				I do not have any ownership (full or partial), of said characters.<br>
+				<b>Newer Super Mario Bros. Wii</b> is a project of the Newer Team, which I am not part of, nor do I have any involvement with.<br>
+				<b><i>Spooky Adventure is my project. For concerns regarding it, contact me.</i></b>
+			</div>
+		</div>
+	</body>
+</html>

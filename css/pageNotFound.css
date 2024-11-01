@@ -1,0 +1,27 @@
+/* Used for the 404 - Page Not Found error page [404.html] */
+/* Heading, footer, background styles are in global.css */
+
+/* Overall style */
+.errorMsgContainer {
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+.errorTitle {
+    color: #ff7b7b;
+    font-family: mario-font;
+    font-size: 40px;
+    text-shadow: 5px 5px #00000055;
+}
+.errorText {
+    font-family: ebrima;
+    text-align: center;
+}
+
+.unlocatableURL {
+    font-size: 18px;
+    font-weight: bold;
+    width: 800px;
+    text-align: center;
+}

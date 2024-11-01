@@ -1,0 +1,148 @@
+/* CSS styling for lightboxes, originally taken from W3Schools (https://www.w3schools.com/howto/howto_js_lightbox.asp) */
+
+/* Disable page scrolling, only used when image viewing model is opened */
+/* The lightbox has code to add/remove this class from 'body' when opened/closed */
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.screenshotRow {
+    padding: 0 8px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    background-color: #000000aa;
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0;
+    position: relative;
+    width: 90%;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    background-image: url('../img/button/fourFrameYellow-160x48.png');
+    background-repeat: repeat, no-repeat;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: seurat-pro;
+    font-size: 20px;
+    height: 48px;
+    position: absolute;
+    right: 25px;
+    text-align: center;
+    text-decoration: none;
+    top: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-text-stroke: black 1.5px;
+    width: 160px;
+}
+
+.close:hover, .close:focus {
+    background-image: url('../img/button/Active/fourFrameButtonActive-160x68.png');
+    animation: buttonHover 0.1s linear forwards;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    background-image: url('../img/button/fourFrameGreen-60x60.png');
+    background-repeat: repeat, no-repeat;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: seurat-pro;
+    font-size: 28px;
+    height: 60px;
+    margin-top: -50px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    user-select: none;
+    -webkit-text-stroke: black 1.5px;
+    -webkit-user-select: none;
+    width: 60px;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+    left: -90px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: -90px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-image: url('../img/button/Active/fourFrameGreenActive-60x60.png');
+    animation: buttonHover 0.1s linear forwards;
+}
+
+/* "Image (X) of (Y)" text */
+.numberText {
+    color: #f2f2f2;
+    font-size: 12px;
+    font-family: ebrima;
+    padding: 8px 12px;
+    position: relative;
+}
+
+img.hover-shadow {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Image thumbnails, what's clicked to open the lightbox */
+.imgThumb {
+    border: solid thick #ffffff;
+    border-radius: 12px;
+}
+
+.modalControls {
+    color: #f2f2f2;
+    font-size: 12px;
+    font-family: ebrima;
+    padding: 8px 12px;
+    position: relative;
+    top: -15px;
+}

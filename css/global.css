@@ -1,0 +1,202 @@
+/* CSS for the base layout of the website, stuff like font definitions, headers/footers, buttons, etc. */
+
+/* Fonts the website uses */
+@font-face { /* Modern Mario font */
+    font-family: mario-font;
+    src: url(../font/mario-font.otf);
+}
+@font-face { /* NSMBW message font */
+    font-family: seurat-pro;
+    src: url(../font/seurat-pro.otf);
+}
+@font-face { /* General purpose font since having Mario-themed fonts gets old pretty quick */
+    font-family: ebrima;
+    src: url(../font/ebrima.ttf);
+}
+@font-face { /* Bold version of the above font */
+    font-family: ebrimabd;
+    src: url(../font/ebrimabd.ttf);
+}
+
+/* BACKGROUND CONTENT */
+
+/* Sets up the background */
+body, html {
+	background-image: linear-gradient(#8824C1, #420077);
+    background-attachment: fixed; /* Stops the gradient from repeating when the page gets longer */
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+    height: 100%;
+	margin: auto; /* Allows the headers and footers to fill the entire width of the screen */
+}
+
+/* Checkers in the background, separate from body since we're animating this */
+div.bgCheckers {
+    animation: bgCheckers 4s linear infinite;
+    background-blend-mode: add;
+    background-image: url(../img/bgChecker.png);
+    background-position: center;
+	background-repeat: repeat;
+	background-size: auto auto;
+    min-height: 100%;
+}
+/* Disables the animation */
+div.disableAnim {
+    animation-play-state: paused;
+}
+
+/* Animation for the background checkers */
+@keyframes bgCheckers {
+	0% {
+	    background-position: 0 0;
+	}
+	100% {
+	    background-position: 136px 136px;
+	}
+}
+
+/* Page header */
+nav.header {
+	background-image: linear-gradient(#453900, #453900b4);
+    color: white;
+	font-family: mario-font;
+	font-size: 32px;
+	height: 120px;
+    position: fixed;
+    text-align: center;
+	text-shadow: 5px 5px #00000055;
+    width: 100%;
+    z-index: 1; /* Put header above game logo */
+}
+/* Yellow border (also used for the footer) */
+div.kadomaruFlame {
+    background-image: url(../img/borderMain.png);
+    background-repeat: repeat-x;
+    width: auto;
+    height: 16.5px;
+}
+/* Due to the header having a fixed position, it cuts off the top-most content of the page and shifts downwards, this pushes it up so that doesn't happen */
+div.headerTopRealignment {
+    padding: 60px;
+}
+
+
+img.noScriptWarning {
+    height: 84px;
+    width: 594px;
+    scale: 1;
+}
+
+
+/* Page footer, this is ownership and copyright information */
+div.footer {
+    background-image: linear-gradient(#453900, #453900b4);
+    bottom: 0px;
+	font-family: ebrimabd;
+	font-size: 14px;
+    height: 100px;
+    padding-bottom: 15px;
+    text-align: center;
+	width: 100%;
+}
+/* Add some extra padding so the footer isn't pressing against the bottom of the page content */
+.footerExtraPadding {
+    padding: 40px;
+}
+
+
+
+/* Tooltips, code taken from W3Schools and slightly modified */
+.tooltip {
+    display: inline-block;
+    position: relative;
+}
+.tooltip .tooltipText {
+    background-color: black;
+    border-radius: 6px;
+    padding: 5px 0;
+    text-align: center;
+    visibility: hidden;
+    width: 160px;
+
+    /* Positioning */
+    left: 20%;
+    margin-left: -60px;
+    position: absolute;
+    top: 125%;
+    z-index: 1;
+
+    /* Text styling */
+    color: white;
+    font-family: ebrima;
+    font-size: 16px;
+    -webkit-text-stroke: 0px; /* Stops the header text-stroke from being applied here */
+}
+/* Adds an up-pointing arrow */
+.tooltip .tooltipText::after {
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+    bottom: 100%;  /* At the top of the tooltip */
+    content: " ";
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+}
+/* Shows the tooltip when hovered */
+.mainButtonOnPage:hover .tooltipText {
+    visibility: visible;
+}
+
+
+
+/* Add codebox styling to <code> text */
+code {
+    background-color: #eee;
+    border-radius: 4px;
+    color: black;
+    font-family: courier, monospace;
+    padding: 0 3px;
+}
+
+padding[data-pad] {
+    content: attr(data-pad);
+    padding: [data-pad];
+}
+
+/* Separate sections with a long white line */
+.separatorLine {
+    background-color: #eee;
+    border-radius: 12px;
+    display: block;
+    height: 3px;
+    margin: auto;
+    text-align: center;
+    width: 750px;
+}
+
+/* General text containers */
+.textContainer {
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+/* General styling */
+.textHeader {
+    color: #ffffff;
+    font-family: mario-font;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 5px 5px #00000055;
+    height: 10px;
+    line-height: 30px;
+}
+.generalText {
+    font-family: ebrima;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}

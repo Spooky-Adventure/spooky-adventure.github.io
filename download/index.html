@@ -2,53 +2,39 @@
 <html>
 	<head>
 		<title>Spooky Adventure - Home</title>
-		<meta content="Super Mario Spooky Adventure - Home" property="og:title" />
-		<meta content="The home of Spooky Adventure, a ghostly hack of New Super Mario Bros. Wii!" property="og:description" />
+		<meta content="Download Spooky Adventure" property="og:title" />
+		<meta content="Download Super Mario Spooky Adventure, a mod for New Super Mario Bros. Wii!" property="og:description" />
 		<meta content="https://spooky-adventure.github.io" property="og:url" />
 		<meta content="#65129C" data-react-helmet="true" name="theme-color" />
-		<link rel="icon" type="image/png" href="./favicon.ico">
-		<link rel="stylesheet" href="./css/button.css">
-        <link rel="stylesheet" href="./css/global.css">
-		<link rel="stylesheet" href="./css/home.css">
-		<link rel="stylesheet" href="./css/lightbox.css">
-		<!-- <script src="./script/animCtrl.js"></script> -->
+		<link rel="icon" type="image/png" href="../favicon.ico">
+        <link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/home.css">
+		<link rel="stylesheet" href="../css/lightbox.css">
 	</head>
-	<body onload="buttonControls(); //checkAnimState();">
-		<div id="bg" class="bgCheckers">
-			<nav class="header">
-				<!-- <div class="animController" id="toggleAnims">
-					<img id="animCtrl" class="buttonAnimIMG" src="./img/button/buttonAnimOn.png" width="48" height="48" onclick="controlAnim();">
-				</div> -->
+	<body>
+		<div class="bgCheckers">
+			<div class="header">
 				<div style="padding: 5px;"></div>
 				Super Mario Spooky Adventure
 				<div style="padding: 5px;"></div>
 				<div>
-					<div class="mainButtonOnPage">
+					<div class="purpleButtonOnPage">
 						<div class="tooltip">Home
-							<span class="tooltipText">You're already here!</span>
+							<span class="tooltiptext">You're already here!</span>
 						</div>
 					</div>
-					<a class="mainButton" data-size="130x48" href="about.html">About</a>
-					<!-- <a class="mainButton" data-size="130x48" data-color="yellow" href="./download/index.html">Download</a>  -->
-					<a class="mainButton" data-size="130x48" href="links.html">Links</a>
-					<a class="mainButton" data-size="130x48" href="https://discord.gg/fW5D3b6WQ8">Discord</a>
+					<a class="purpleButton" href="../about.html">About</a>
+                    <div class="violetButtonOnPage">
+						<div class="tooltip">Download
+							<span class="tooltiptext">You're already here!</span>
+						</div>
+					</div>
+					<a class="purpleButton" href="../links.html">Links</a>
+					<a class="purpleButton" href="https://discord.gg/fW5D3b6WQ8">Discord</a>
 				</div>
-				<div class="kadomaruFlame"></div>
-			</nav>
+			</div>
 			<div class="headerTopRealignment"></div>
 			<div class="textContainer">
-				<h2 class="textHeader">VERY IMPORTANT NOTE:</h2>
-				<p class="generalText">
-					This project is cancelled. EVERYTHING below this, and on other pages should just be ignored,
-					it's only here for archival reasons (and also because I spent weeks making this, I'd like for
-					it to not just rot on my hard drive...).
-					It's all obviously unfinished too, stuff's gonna be broken or weird or wrong.
-					<br>
-					<br>
-					With that disclaimer out of the way, feel free to read on.
-				</p>
-				<hr></hr>
-				
 				<h2 class="textHeader">Introduction</h2>
 				<p class="generalText">
 					<b>Spooky Adventure</b> is a ghostly hack of New Super Mario Bros. Wii, currently in development.
@@ -65,6 +51,13 @@
 				<img src="./img/spookyAdventureLogo.png" class="projectLogo" width="805" height="385">
 				<!-- Size is defined above since doing it inside the class causes the image to not center-align -->
 			</div>
+			<!--<div class="modLength">
+				<h2 class="textHeader">How big will the mod be?</h2>
+				<p class="generalText">
+					We're not sure exactly how big the mod will be, however it will be bigger than one world's worth of levels, but no bigger than 2 worlds.
+					Keep in mind that as development progresses, this may change.
+				</p>
+			</div>-->
 			<div style="padding: 15px;"></div>
 			<div class="gameScreenshots">
 				<h2 class="screenshotHeader">Screenshots</h2>
@@ -120,13 +113,12 @@
 
 			<div class="footerExtraPadding"></div>
 			<div class="footer">
-				<div class="kadomaruFlame"></div>
 				<div style="padding: 2px;"></div>
-				<b>(c)</b> 2022 - 2024: MandyIGuess & the Spooky Adventure Development Team<br>
+				<b>(c)</b> 2022/2023 - MandyIGuess & the Spooky Adventure Development Team<br>
 				<b>NEW Super Mario Bros. Wii</b>, as well as characters such as Mario, Luigi, Toad, and any others, are <em>fully</em> owned by NINTENDO.<br>
 				I do not have any ownership (full or partial), of said characters.<br>
 				<b>Newer Super Mario Bros. Wii</b> is a project of the Newer Team, which I am not part of, nor do I have any involvement with.<br>
-				<b><i>Spooky Adventure is my project.</i> For concerns regarding it, contact me.</b>
+				<b><i>Spooky Adventure is my project. For concerns regarding it, contact me.</i></b>
 			</div>
 		</div>
 	</body>
